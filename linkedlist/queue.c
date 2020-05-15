@@ -52,7 +52,7 @@ Item pop(Queue queue){
     #endif
 
     Item item = (Item)LinkedList_remove((LinkedList*)queue, queue->parent.head);
-    push(((Queue)&(queue->garbage_collector)), item);
+    // push(((Queue)&(queue->garbage_collector)), item);
     return item;
 }
 

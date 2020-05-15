@@ -55,6 +55,9 @@ LinkedListNode* LinkedList_remove(LinkedList *list, LinkedListNode *node){
         assert(instance && "Removing node not into the list");
     #endif
 
+    if(list->size == 0)
+        return 0;
+
     LinkedListNode *prev = node->prev;
     LinkedListNode *next = node->next;
 
